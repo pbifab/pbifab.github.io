@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why PBIFab — Competitive Advantages</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    .adv-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      transition: all var(--transition);
+      position: relative; overflow: hidden;
+    }
+    .adv-card::after {
+      content: attr(data-num);
+      position: absolute; top: 20px; right: 24px;
+      font-family: var(--font-display);
+      font-size: 4rem; font-weight: 800;
+      color: rgba(0,180,216,0.08); line-height: 1;
+    }
+    .adv-card:hover {
+      border-color: var(--azure-light);
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-5px);
+      background: var(--surface-hover);
+    }
+    .adv-icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .adv-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .adv-card p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.75; }
+    .adv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+    .vs-table {
+      width: 100%; border-collapse: collapse;
+      margin-top: 32px; border-radius: var(--radius); overflow: hidden;
+    }
+    .vs-table th {
+      padding: 14px 20px;
+      background: var(--slate-soft);
+      font-family: var(--font-display); font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-dim); text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .vs-table th.highlight { color: var(--azure-light); }
+    .vs-table td {
+      padding: 14px 20px;
+      font-size: 0.87rem; color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+    }
+    .vs-table td.highlight { color: var(--white); font-weight: 500; }
+    .vs-table tr:last-child td { border-bottom: none; }
+    .vs-table tr:hover td { background: var(--surface); }
+    .yes { color: var(--fabric) !important; font-weight: 700 !important; }
+    .no { color: #e05c6e !important; }
+    .partial { color: #f5a623 !important; }
+    @media (max-width: 768px) { .adv-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-brand"><a href="../index.html"><span class="nav-wordmark">PBI<span>Fab</span></span></a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="overview.html">Overview</a></li>
+    <li><a href="mission.html">Mission</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="markets.html">Markets</a></li>
+    <li><a href="advantages.html" class="active">Why Us</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="developments.html">Updates</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="section-label">Competitive Advantages</div>
+    <h1>Why Clients Choose PBIFab</h1>
+    <p>In a market of generalists, PBIFab's focused expertise and design-led approach make the difference.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="section-label">Our Edge</div>
+    <h2>Three Pillars of Differentiation</h2>
+    <div class="adv-grid">
+      <div class="adv-card" data-num="01">
+        <div class="adv-icon">🎯</div>
+        <h3>Niche Microsoft Expertise</h3>
+        <p>Unlike generalist IT firms that spread attention across dozens of platforms, PBIFab focuses exclusively on the Microsoft data stack. This means our team is always current on the latest Power BI features, Fabric updates, and Copilot capabilities — including Direct Lake mode and advanced DAX optimization techniques that others simply don't know.</p>
+      </div>
+      <div class="adv-card" data-num="02">
+        <div class="adv-icon">🎨</div>
+        <h3>Design-First Approach</h3>
+        <p>Most analytics firms build dashboards. We build experiences. Our UI/UX specialists ensure every report is intuitive, visually compelling, and aligned with your brand. The result: dashboards people actually use — and love — rather than complex tools that gather dust.</p>
+      </div>
+      <div class="adv-card" data-num="03">
+        <div class="adv-icon">⚡</div>
+        <h3>Agile Delivery Model</h3>
+        <p>Rigid waterfall methodologies slow down analytics projects. We operate in agile sprints, enabling rapid prototyping and frequent deliverables. Stakeholders see real outputs early, allowing for timely feedback and faster path to production-ready solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="section-label">Competitive Comparison</div>
+    <h2>How We Stack Up</h2>
+    <p>See how PBIFab compares to typical IT generalists and offshore body shops.</p>
+    <table class="vs-table">
+      <thead>
+        <tr>
+          <th>Capability</th>
+          <th class="highlight">PBIFab Solutions</th>
+          <th>Generalist IT Firm</th>
+          <th>Offshore Dev Shop</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Microsoft Fabric Specialization</td><td class="yes highlight">✓ Deep Expertise</td><td class="partial">~ Limited</td><td class="no">✗ Rare</td></tr>
+        <tr><td>Power BI Copilot Integration</td><td class="yes highlight">✓ Current</td><td class="partial">~ Sometimes</td><td class="no">✗ Outdated</td></tr>
+        <tr><td>UI/UX Design Focus</td><td class="yes highlight">✓ Built-in</td><td class="no">✗ Extra cost</td><td class="no">✗ Minimal</td></tr>
+        <tr><td>Rapid Prototype (2 weeks)</td><td class="yes highlight">✓ Standard</td><td class="partial">~ 4-8 weeks</td><td class="partial">~ Variable</td></tr>
+        <tr><td>Certified Team (100%)</td><td class="yes highlight">✓ All members</td><td class="partial">~ Some</td><td class="partial">~ Mixed</td></tr>
+        <tr><td>Direct Lake Mode Expertise</td><td class="yes highlight">✓ Core skill</td><td class="no">✗ Rare</td><td class="no">✗ Very rare</td></tr>
+        <tr><td>Row-Level Security (RLS)</td><td class="yes highlight">✓ Standard</td><td class="partial">~ Competent</td><td class="partial">~ Basic</td></tr>
+        <tr><td>Migration (Tableau/Qlik/Excel)</td><td class="yes highlight">✓ Specialized</td><td class="partial">~ Basic</td><td class="partial">~ Varies</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-bg"></div>
+  <div class="container cta-inner">
+    <h2>Experience the PBIFab Difference</h2>
+    <p>See why organizations choose specialized expertise over generalist IT firms.</p>
+    <a href="contact.html" class="btn btn-white">Request a Consultation</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><span class="nav-wordmark">PBI<span>Fab</span></span><p>Microsoft Power BI & Fabric specialists delivering end-to-end analytics solutions globally.</p><p class="footer-email">📧 analytics@pbifab.com</p></div>
+    <div class="footer-links"><h4>Company</h4><ul><li><a href="overview.html">Overview</a></li><li><a href="mission.html">Mission</a></li><li><a href="advantages.html">Why Us</a></li><li><a href="team.html">Team</a></li></ul></div>
+    <div class="footer-links"><h4>Services</h4><ul><li><a href="services.html">Power BI</a></li><li><a href="services.html">Fabric</a></li><li><a href="services.html">Migration</a></li></ul></div>
+    <div class="footer-links"><h4>Contact</h4><ul><li><a href="contact.html">Get in Touch</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 PBIFab Solutions LLP. All rights reserved.</p></div>
+</footer>
+
+<div class="chatbot-btn" id="chatbotBtn"><span class="chat-icon">💬</span></div>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chat-header"><div class="chat-avatar">🤖</div><div><strong>PBIFab Assistant</strong><span class="chat-status">● Online</span></div><button class="chat-close" id="chatClose">✕</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="chat-msg bot">Want to know why clients choose PBIFab? Ask me anything!</div></div>
+  <div class="chat-input-area"><input type="text" id="chatInput" placeholder="Type your question..."/><button id="chatSend">Send</button></div>
+  <div class="chat-form" id="chatForm" style="display:none"><p>Leave your details:</p><input type="text" id="cfName" placeholder="Your Name"/><input type="email" id="cfEmail" placeholder="Your Email"/><textarea id="cfMessage" placeholder="Your Message" rows="3"></textarea><button id="cfSubmit">Send to PBIFab Team</button><div id="cfStatus"></div></div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

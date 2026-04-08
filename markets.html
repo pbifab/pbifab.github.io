@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Target Markets — PBIFab Solutions LLP</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    .market-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      transition: all var(--transition);
+      position: relative; overflow: hidden;
+    }
+    .market-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--azure), var(--azure-light));
+    }
+    .market-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--azure-light);
+      box-shadow: var(--shadow-glow);
+      background: var(--surface-hover);
+    }
+    .market-card .m-icon { font-size: 3rem; margin-bottom: 16px; }
+    .market-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .market-card .m-tag {
+      display: inline-block; padding: 3px 10px;
+      background: rgba(0,180,216,0.1); border: 1px solid rgba(0,180,216,0.2);
+      border-radius: 50px; font-size: 0.7rem; font-weight: 600; color: var(--azure-light);
+      margin-bottom: 14px;
+    }
+    .market-card p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.7; margin-bottom: 16px; }
+    .market-card ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .market-card ul li { font-size: 0.83rem; color: var(--text-dim); display: flex; gap: 7px; }
+    .market-card ul li::before { content: '→'; color: var(--fabric); font-weight: 700; flex-shrink: 0; }
+    .markets-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+    @media (max-width: 768px) { .markets-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-brand"><a href="../index.html"><span class="nav-wordmark">PBI<span>Fab</span></span></a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="overview.html">Overview</a></li>
+    <li><a href="mission.html">Mission</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="markets.html" class="active">Markets</a></li>
+    <li><a href="advantages.html">Why Us</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="developments.html">Updates</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="section-label">Target Markets</div>
+    <h1>Serving Industries That Run on Data</h1>
+    <p>PBIFab works with mid-market to enterprise organizations across high-stakes, data-intensive sectors.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <p style="max-width:680px;color:var(--text-dim);">Our solutions are purpose-built for industries where data accuracy, speed, and clarity directly impact bottom lines, compliance posture, and operational efficiency. We understand the nuances of each sector we serve.</p>
+    <div class="markets-grid">
+      <div class="market-card">
+        <div class="m-icon">🏦</div>
+        <div class="m-tag">FINANCE & FINTECH</div>
+        <h3>Finance & Fintech</h3>
+        <p>Financial services organizations need analytics that are fast, accurate, and audit-ready. PBIFab delivers real-time dashboards built for regulatory compliance, risk monitoring, and executive reporting.</p>
+        <ul>
+          <li>Real-time trading and portfolio performance dashboards</li>
+          <li>Regulatory compliance reporting (Basel III, IFRS, etc.)</li>
+          <li>Fraud detection visualizations and alerts</li>
+          <li>Customer profitability and segmentation analysis</li>
+          <li>Month-end and quarter-end financial close automation</li>
+        </ul>
+      </div>
+      <div class="market-card">
+        <div class="m-icon">🛒</div>
+        <div class="m-tag">RETAIL & E-COMMERCE</div>
+        <h3>Retail & E-commerce</h3>
+        <p>Retail success depends on visibility — from supplier to shelf to sale. We build analytics ecosystems that connect supply chain, inventory, sales, and customer behavior in one unified view.</p>
+        <ul>
+          <li>Supply chain visibility and vendor performance tracking</li>
+          <li>Customer behavior, funnel, and retention analytics</li>
+          <li>Inventory optimization and demand forecasting</li>
+          <li>Store vs. online channel performance comparison</li>
+          <li>Marketing spend ROI and attribution dashboards</li>
+        </ul>
+      </div>
+      <div class="market-card">
+        <div class="m-icon">🏭</div>
+        <div class="m-tag">MANUFACTURING</div>
+        <h3>Manufacturing</h3>
+        <p>Modern manufacturing generates enormous volumes of IoT and operational data. PBIFab helps you visualize machine health, production efficiency, and quality metrics in real time.</p>
+        <ul>
+          <li>IoT sensor data visualization and anomaly detection</li>
+          <li>OEE (Overall Equipment Effectiveness) dashboards</li>
+          <li>Production line throughput and downtime tracking</li>
+          <li>Quality control and defect rate reporting</li>
+          <li>Supply chain and procurement analytics</li>
+        </ul>
+      </div>
+      <div class="market-card">
+        <div class="m-icon">🏥</div>
+        <div class="m-tag">HEALTHCARE</div>
+        <h3>Healthcare</h3>
+        <p>Healthcare analytics must balance clinical accuracy with data privacy. We build HIPAA-aware analytics solutions that give clinicians and administrators the insights they need to improve outcomes.</p>
+        <ul>
+          <li>Patient outcome and readmission rate analysis</li>
+          <li>Hospital resource utilization and bed capacity tracking</li>
+          <li>Clinical trial data visualization</li>
+          <li>Revenue cycle management and billing analytics</li>
+          <li>Staff scheduling and workforce optimization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="section-label">Engagement Model</div>
+    <h2>How We Work With You</h2>
+    <p>Whether you need a quick-win dashboard in two weeks or a multi-year Fabric transformation program, PBIFab adapts to your timeline, budget, and maturity level.</p>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">🚀</div><h3>Rapid Prototyping</h3><p>Get a working proof-of-concept dashboard in under 2 weeks. Validate value fast before committing to full deployment.</p></div>
+      <div class="card"><div class="card-icon">🏗️</div><h3>Project-Based Delivery</h3><p>Defined scope, timeline, and deliverables. Ideal for specific dashboard builds, migrations, or Fabric implementations.</p></div>
+      <div class="card"><div class="card-icon">🔄</div><h3>Retainer Support</h3><p>Ongoing development, maintenance, and optimization support. Perfect for teams needing continuous analytics evolution.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-bg"></div>
+  <div class="container cta-inner">
+    <h2>Does Your Industry Need Better Analytics?</h2>
+    <p>We've solved data challenges across finance, retail, manufacturing, and healthcare. Yours is next.</p>
+    <a href="contact.html" class="btn btn-white">Discuss Your Industry</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><span class="nav-wordmark">PBI<span>Fab</span></span><p>Microsoft Power BI & Fabric specialists delivering end-to-end analytics solutions globally.</p><p class="footer-email">📧 analytics@pbifab.com</p></div>
+    <div class="footer-links"><h4>Industries</h4><ul><li><a href="markets.html">Finance & Fintech</a></li><li><a href="markets.html">Retail & E-commerce</a></li><li><a href="markets.html">Manufacturing</a></li><li><a href="markets.html">Healthcare</a></li></ul></div>
+    <div class="footer-links"><h4>Services</h4><ul><li><a href="services.html">Power BI</a></li><li><a href="services.html">Microsoft Fabric</a></li><li><a href="services.html">Migration</a></li></ul></div>
+    <div class="footer-links"><h4>Contact</h4><ul><li><a href="contact.html">Get in Touch</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 PBIFab Solutions LLP. All rights reserved.</p></div>
+</footer>
+
+<div class="chatbot-btn" id="chatbotBtn"><span class="chat-icon">💬</span></div>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chat-header"><div class="chat-avatar">🤖</div><div><strong>PBIFab Assistant</strong><span class="chat-status">● Online</span></div><button class="chat-close" id="chatClose">✕</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="chat-msg bot">Hi! I can help you understand how PBIFab serves your industry. What sector are you in?</div></div>
+  <div class="chat-input-area"><input type="text" id="chatInput" placeholder="Type your question..."/><button id="chatSend">Send</button></div>
+  <div class="chat-form" id="chatForm" style="display:none"><p>Leave your details:</p><input type="text" id="cfName" placeholder="Your Name"/><input type="email" id="cfEmail" placeholder="Your Email"/><textarea id="cfMessage" placeholder="Your Message" rows="3"></textarea><button id="cfSubmit">Send to PBIFab Team</button><div id="cfStatus"></div></div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

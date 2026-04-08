@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products & Services — PBIFab Solutions LLP</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    .service-block {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+      padding: 70px 0; border-bottom: 1px solid var(--border);
+    }
+    .service-block:last-child { border-bottom: none; }
+    .service-block.reverse { direction: rtl; }
+    .service-block.reverse > * { direction: ltr; }
+    .service-visual {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px; text-align: center;
+      font-size: 5rem;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 220px; gap: 16px;
+      transition: all var(--transition);
+    }
+    .service-visual:hover { border-color: var(--azure-light); box-shadow: var(--shadow-glow); }
+    .service-visual span { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); }
+    .service-tag {
+      display: inline-block; padding: 4px 12px;
+      background: rgba(0,180,216,0.1); border: 1px solid rgba(0,180,216,0.3);
+      border-radius: 50px; font-size: 0.72rem; font-weight: 600;
+      color: var(--azure-light); margin-bottom: 14px; letter-spacing: 0.06em;
+    }
+    .service-text h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--white); margin-bottom: 14px; letter-spacing: -0.02em; }
+    .service-text p { color: var(--text-dim); margin-bottom: 16px; font-size: 0.92rem; line-height: 1.75; }
+    .service-features { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+    .service-features li { display: flex; gap: 8px; font-size: 0.87rem; color: var(--text-dim); }
+    .service-features li::before { content: '✓'; color: var(--fabric); font-weight: 700; flex-shrink: 0; }
+    @media (max-width: 768px) {
+      .service-block { grid-template-columns: 1fr; gap: 30px; }
+      .service-block.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-brand"><a href="../index.html"><span class="nav-wordmark">PBI<span>Fab</span></span></a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="overview.html">Overview</a></li>
+    <li><a href="mission.html">Mission</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="markets.html">Markets</a></li>
+    <li><a href="advantages.html">Why Us</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="developments.html">Updates</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="section-label">Products & Services</div>
+    <h1>End-to-End Analytics Solutions</h1>
+    <p>From data strategy to stunning dashboards — PBIFab covers the complete Microsoft analytics lifecycle.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <div class="service-block">
+      <div class="service-text">
+        <div class="service-tag">VISUALIZATION</div>
+        <h2>Advanced Data Visualization</h2>
+        <p>We create bespoke, interactive Power BI reports and dashboards that go far beyond standard templates. Every visual is designed with the end-user in mind — intuitive, beautiful, and packed with insight.</p>
+        <ul class="service-features">
+          <li>Custom KPI dashboards tailored to your business goals</li>
+          <li>Interactive drill-through and cross-filtering reports</li>
+          <li>Mobile-optimized layouts for on-the-go access</li>
+          <li>Branded themes and company-standard design systems</li>
+          <li>AI-powered visuals with Copilot integration</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Get a Demo</a>
+      </div>
+      <div class="service-visual">📊<span>Power BI Reports & Dashboards</span></div>
+    </div>
+
+    <div class="service-block reverse">
+      <div class="service-text">
+        <div class="service-tag">PLATFORM</div>
+        <h2>Microsoft Fabric Implementation</h2>
+        <p>End-to-end deployment of Microsoft Fabric — the next generation unified analytics platform. We handle everything from OneLake setup to Synapse Data Engineering, so your data estate is future-ready.</p>
+        <ul class="service-features">
+          <li>OneLake architecture design and setup</li>
+          <li>Data Factory pipelines and orchestration</li>
+          <li>Synapse Data Engineering and Lakehouse configuration</li>
+          <li>Direct Lake mode optimization for blazing-fast queries</li>
+          <li>Fabric Readiness Assessments for migration planning</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Start Fabric Journey</a>
+      </div>
+      <div class="service-visual">🔷<span>Microsoft Fabric Implementation</span></div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-text">
+        <div class="service-tag">GOVERNANCE</div>
+        <h2>Data Strategy & Governance</h2>
+        <p>A robust analytics infrastructure needs solid governance. We consult on data security, access control, and building a reliable single source of truth across your organization.</p>
+        <ul class="service-features">
+          <li>Row-Level Security (RLS) design and implementation</li>
+          <li>Object-Level Security (OLS) for sensitive data</li>
+          <li>Workspace and capacity governance frameworks</li>
+          <li>Data lineage and documentation best practices</li>
+          <li>Single source of truth architecture consulting</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Consult with Us</a>
+      </div>
+      <div class="service-visual">🔒<span>Data Strategy & Governance</span></div>
+    </div>
+
+    <div class="service-block reverse">
+      <div class="service-text">
+        <div class="service-tag">MIGRATION</div>
+        <h2>Migration Services</h2>
+        <p>Already invested in Tableau, Qlik, or Excel-based reporting? We specialize in seamless migration to the Power BI and Microsoft Fabric ecosystem — with minimal disruption and maximum value preservation.</p>
+        <ul class="service-features">
+          <li>Tableau-to-Power BI visual and data model migration</li>
+          <li>Qlik Sense / QlikView transition planning</li>
+          <li>Excel workbook migration and automation</li>
+          <li>Legacy SSRS report modernization</li>
+          <li>Post-migration optimization and user training</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Plan Your Migration</a>
+      </div>
+      <div class="service-visual">🔁<span>Platform Migration Services</span></div>
+    </div>
+
+    <div class="service-block">
+      <div class="service-text">
+        <div class="service-tag">ENABLEMENT</div>
+        <h2>Training & Enablement</h2>
+        <p>Empower your internal teams with the knowledge and skills to take ownership of your analytics environment. Our custom workshops are hands-on, practical, and tailored to your technology stack.</p>
+        <ul class="service-features">
+          <li>Power BI Desktop & Service fundamentals</li>
+          <li>Advanced DAX and data modeling workshops</li>
+          <li>Microsoft Fabric for data engineers</li>
+          <li>Self-service analytics enablement programs</li>
+          <li>Ongoing coaching and Q&A support sessions</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Book a Workshop</a>
+      </div>
+      <div class="service-visual">🎓<span>Training & Enablement</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-bg"></div>
+  <div class="container cta-inner">
+    <h2>Which Service Do You Need?</h2>
+    <p>Let our team understand your requirements and recommend the right solution path.</p>
+    <a href="contact.html" class="btn btn-white">Talk to an Expert</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><span class="nav-wordmark">PBI<span>Fab</span></span><p>Microsoft Power BI & Fabric specialists delivering end-to-end analytics solutions globally.</p><p class="footer-email">📧 analytics@pbifab.com</p></div>
+    <div class="footer-links"><h4>Services</h4><ul><li><a href="services.html">Power BI Development</a></li><li><a href="services.html">Microsoft Fabric</a></li><li><a href="services.html">Data Strategy</a></li><li><a href="services.html">Migration Services</a></li><li><a href="services.html">Training</a></li></ul></div>
+    <div class="footer-links"><h4>Company</h4><ul><li><a href="overview.html">Overview</a></li><li><a href="mission.html">Mission & Vision</a></li><li><a href="team.html">Team</a></li><li><a href="developments.html">Updates</a></li></ul></div>
+    <div class="footer-links"><h4>Contact</h4><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="mailto:analytics@pbifab.com">analytics@pbifab.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 PBIFab Solutions LLP. All rights reserved.</p></div>
+</footer>
+
+<div class="chatbot-btn" id="chatbotBtn"><span class="chat-icon">💬</span></div>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chat-header"><div class="chat-avatar">🤖</div><div><strong>PBIFab Assistant</strong><span class="chat-status">● Online</span></div><button class="chat-close" id="chatClose">✕</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="chat-msg bot">Hi! Ask me about any of our services — Power BI, Fabric, Migration, Training, or more!</div></div>
+  <div class="chat-input-area"><input type="text" id="chatInput" placeholder="Type your question..."/><button id="chatSend">Send</button></div>
+  <div class="chat-form" id="chatForm" style="display:none"><p>Leave your details:</p><input type="text" id="cfName" placeholder="Your Name"/><input type="email" id="cfEmail" placeholder="Your Email"/><textarea id="cfMessage" placeholder="Your Message" rows="3"></textarea><button id="cfSubmit">Send to PBIFab Team</button><div id="cfStatus"></div></div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

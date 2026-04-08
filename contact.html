@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — PBIFab Solutions LLP</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-brand"><a href="../index.html"><span class="nav-wordmark">PBI<span>Fab</span></span></a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="overview.html">Overview</a></li>
+    <li><a href="mission.html">Mission</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="markets.html">Markets</a></li>
+    <li><a href="advantages.html">Why Us</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="developments.html">Updates</a></li>
+    <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="section-label">Contact Us</div>
+    <h1>Let's Start a Conversation</h1>
+    <p>Tell us about your data challenges. Our team will respond within one business day with a tailored approach.</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Whether you're exploring Power BI for the first time, planning a Fabric migration, or need ongoing development support — we'd love to hear from you.</p>
+        <div class="contact-detail">
+          <div class="cd-icon">📧</div>
+          <div>
+            <div class="cd-label">General Inquiries</div>
+            <div class="cd-value"><a href="mailto:analytics@pbifab.com" style="color:var(--azure-light)">analytics@pbifab.com</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-icon">🌐</div>
+          <div>
+            <div class="cd-label">Website</div>
+            <div class="cd-value">www.pbifab.com</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-icon">🌍</div>
+          <div>
+            <div class="cd-label">Location</div>
+            <div class="cd-value">Global — Remote-First</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-icon">⏱️</div>
+          <div>
+            <div class="cd-label">Response Time</div>
+            <div class="cd-value">Within 1 Business Day</div>
+          </div>
+        </div>
+        <div style="margin-top: 32px;">
+          <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:14px;">What Happens Next?</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;font-size:0.87rem;color:var(--text-dim);"><span style="color:var(--azure-light);font-weight:800;flex-shrink:0;">01</span>We review your inquiry and match you with the right specialist</li>
+            <li style="display:flex;gap:10px;font-size:0.87rem;color:var(--text-dim);"><span style="color:var(--azure-light);font-weight:800;flex-shrink:0;">02</span>A discovery call is scheduled to understand your requirements</li>
+            <li style="display:flex;gap:10px;font-size:0.87rem;color:var(--text-dim);"><span style="color:var(--azure-light);font-weight:800;flex-shrink:0;">03</span>We propose a tailored solution with scope and timeline</li>
+            <li style="display:flex;gap:10px;font-size:0.87rem;color:var(--text-dim);"><span style="color:var(--azure-light);font-weight:800;flex-shrink:0;">04</span>We begin building — with your first deliverable in 2 weeks</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-form-box">
+        <h3>Send Us a Message</h3>
+        <form id="mainContactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name *</label>
+              <input type="text" id="contactName" placeholder="Your full name" required/>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" placeholder="you@company.com" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactCompany">Company</label>
+              <input type="text" id="contactCompany" placeholder="Your company name"/>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" placeholder="+1 (000) 000-0000"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactService">Service of Interest</label>
+            <select id="contactService">
+              <option value="">Select a service...</option>
+              <option value="Power BI Development">Power BI Report Development</option>
+              <option value="Microsoft Fabric">Microsoft Fabric Implementation</option>
+              <option value="Data Strategy">Data Strategy & Governance</option>
+              <option value="Migration Services">Platform Migration (Tableau/Qlik/Excel)</option>
+              <option value="Training">Training & Enablement</option>
+              <option value="Fabric Readiness">Fabric Readiness Assessment</option>
+              <option value="General Inquiry">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Tell Us About Your Project *</label>
+            <textarea id="contactMessage" rows="5" placeholder="Describe your data challenge, current tools, and what you're trying to achieve..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Your message is on its way to the PBIFab team! We'll respond within one business day.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" style="background:var(--slate-mid)">
+  <div class="container">
+    <div class="section-label center">FAQ</div>
+    <h2 style="text-align:center;font-family:var(--font-display);font-size:1.8rem;font-weight:800;letter-spacing:-0.02em;color:var(--white);margin-bottom:40px;">Frequently Asked Questions</h2>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">🕐</div><h3>How quickly can you start?</h3><p>For most engagements, we can begin within 1–2 weeks of signed agreement. Rapid prototypes can be delivered in as little as 5 business days.</p></div>
+      <div class="card"><div class="card-icon">💰</div><h3>How do you price your services?</h3><p>We offer project-based fixed pricing, time-and-materials, and monthly retainer models depending on the engagement type and duration.</p></div>
+      <div class="card"><div class="card-icon">🔒</div><h3>Is our data secure?</h3><p>Absolutely. We follow Microsoft's security best practices, operate within your tenant where possible, and sign NDAs for all engagements.</p></div>
+      <div class="card"><div class="card-icon">🌍</div><h3>Do you work with clients globally?</h3><p>Yes — our remote-first model allows us to serve clients worldwide. We've worked with organizations across North America, Europe, and Asia-Pacific.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><span class="nav-wordmark">PBI<span>Fab</span></span><p>Microsoft Power BI & Fabric specialists delivering end-to-end analytics solutions globally.</p><p class="footer-email">📧 analytics@pbifab.com</p></div>
+    <div class="footer-links"><h4>Company</h4><ul><li><a href="overview.html">Overview</a></li><li><a href="mission.html">Mission</a></li><li><a href="team.html">Team</a></li><li><a href="developments.html">Updates</a></li></ul></div>
+    <div class="footer-links"><h4>Services</h4><ul><li><a href="services.html">Power BI</a></li><li><a href="services.html">Fabric</a></li><li><a href="services.html">Migration</a></li></ul></div>
+    <div class="footer-links"><h4>Contact</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="mailto:analytics@pbifab.com">analytics@pbifab.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 PBIFab Solutions LLP. All rights reserved.</p></div>
+</footer>
+
+<div class="chatbot-btn" id="chatbotBtn"><span class="chat-icon">💬</span></div>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chat-header"><div class="chat-avatar">🤖</div><div><strong>PBIFab Assistant</strong><span class="chat-status">● Online</span></div><button class="chat-close" id="chatClose">✕</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="chat-msg bot">Hi! I'm here to help. You can also use the form on this page to send your inquiry directly to analytics@pbifab.com!</div></div>
+  <div class="chat-input-area"><input type="text" id="chatInput" placeholder="Type your question..."/><button id="chatSend">Send</button></div>
+  <div class="chat-form" id="chatForm" style="display:none"><p>Leave your details:</p><input type="text" id="cfName" placeholder="Your Name"/><input type="email" id="cfEmail" placeholder="Your Email"/><textarea id="cfMessage" placeholder="Your Message" rows="3"></textarea><button id="cfSubmit">Send to PBIFab Team</button><div id="cfStatus"></div></div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
